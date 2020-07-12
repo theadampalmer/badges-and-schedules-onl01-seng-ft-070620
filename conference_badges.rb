@@ -10,7 +10,6 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
-  binding.pry
   room=0
   attendees.collect do |name|
     room+=1
@@ -18,6 +17,7 @@ def assign_rooms(attendees)
   end
 end
 def printer(attendees)
+  binding.pry
   batch_badge_creator(attendees).each do |value|
     puts value
   end
